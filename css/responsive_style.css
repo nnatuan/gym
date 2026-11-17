@@ -1,0 +1,231 @@
+/* ==========================================================================
+   RESPONSIVE STYLESHEET - GỌN KHỎE x GYM
+   ========================================================================== */
+
+/* Intermediate Desktop & Laptop Screens */
+@media (max-width: 1400px) {
+    .header-fluid, .topbar-fluid {
+        padding: 0 24px;
+    }
+    .nav-desktop {
+        gap: 14px;
+        margin: 0 10px;
+    }
+    .nav-link {
+        font-size: 0.88rem;
+    }
+    .btn-header-phone {
+        padding: 8px 14px;
+        font-size: 0.84rem;
+    }
+    .btn-header-cta {
+        padding: 9px 16px;
+        font-size: 0.84rem;
+    }
+}
+
+@media (max-width: 1120px) and (min-width: 993px) {
+    .header-fluid, .topbar-fluid {
+        padding: 0 16px;
+    }
+    .nav-desktop {
+        gap: 10px;
+        margin: 0 6px;
+    }
+    .nav-link {
+        font-size: 0.82rem;
+    }
+    .btn-header-phone {
+        display: none;
+    }
+}
+
+/* Large Tablets & Small Laptops (< 1200px) */
+@media (max-width: 1200px) {
+    .container {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .hero-title {
+        font-size: 2.8rem;
+    }
+    .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .value-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .journey-steps-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .footer-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+}
+
+/* Tablets (< 992px) */
+@media (max-width: 992px) {
+    .nav-desktop {
+        display: none !important;
+    }
+    
+    .topbar-center-content {
+        gap: 10px;
+        font-size: 0.8rem;
+    }
+    
+    .mobile-nav-toggle {
+        display: flex;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .hero-media {
+        max-width: 600px;
+        margin: 0 auto;
+    }
+
+    .about-grid,
+    .painpoints-grid,
+    .models-grid,
+    .suitable-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .fitlean-dual-cols,
+    .calculator-grid,
+    .ops-grid,
+    .contact-layout {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .hero-stats-ribbon {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .stat-item:nth-child(2)::after {
+        display: none;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .fitlean-box {
+        padding: 30px 20px;
+    }
+
+    .contact-card-box {
+        padding: 36px 24px;
+    }
+
+    .floating-badge.badge-top-right {
+        top: 10px;
+        right: 10px;
+    }
+
+    .floating-badge.badge-bottom-left {
+        bottom: 10px;
+        left: 10px;
+    }
+}
+
+/* Mobile Phones (< 768px) */
+@media (max-width: 768px) {
+    .site-topbar {
+        display: none;
+    }
+
+    .header-inner {
+        height: 70px;
+    }
+
+    .site-logo img {
+        height: 38px;
+    }
+
+    .hero-section {
+        padding: 40px 0 60px 0;
+    }
+
+    .hero-title {
+        font-size: 2.2rem;
+    }
+
+    .hero-title span.brand-qcare {
+        font-size: 1.15rem;
+    }
+
+    .hero-keypoints {
+        grid-template-columns: 1fr;
+    }
+
+    .hero-cta-group {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    .hero-stats-ribbon {
+        grid-template-columns: 1fr;
+    }
+
+    .stat-item::after {
+        display: none !important;
+    }
+
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .journey-steps-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .value-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row-2 {
+        grid-template-columns: 1fr;
+    }
+
+    .calc-big-revenue {
+        font-size: 2.1rem;
+    }
+
+    .calc-big-profit {
+        font-size: 1.55rem;
+    }
+
+    .calculator-wrapper {
+        padding: 24px 16px;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .floating-contact-widget {
+        bottom: 20px;
+        right: 20px;
+    }
+
+    .floating-contact-btn {
+        width: 46px;
+        height: 46px;
+        font-size: 1.2rem;
+    }
+}
